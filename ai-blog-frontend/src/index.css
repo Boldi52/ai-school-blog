@@ -1,0 +1,50 @@
+body {
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: .5rem;
+}
+
+.tags {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: .5rem;
+}
+
+@media (max-width:600px) {
+  .container {
+    padding: .6rem;
+  }
+
+  .card {
+    padding: .8rem;
+  }
+}
